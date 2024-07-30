@@ -31,6 +31,8 @@ clang -lstdc++ -fplugin=./build/libCyclomaticComplexity.so ./test/sample.cpp
 
 The plugin will generate a report that includes the cyclomatic complexity values for each function in your code.
 
+To run the plugin on a different source file, simply replace `./test/sample.cpp` with the path to your desired source file.
+
 Let's take a detailed example to understand how cyclomatic complexity works. Consider the following code snippet:
 
 ```cpp
@@ -69,3 +71,36 @@ graph TD
 ```
 
 This graph shows the different paths that can be taken based on the conditions. By analyzing the cyclomatic complexity and the control flow graph, you can identify potential areas of code that may require additional testing or refactoring to improve code quality.
+
+---
+
+## Authors
+
+> [Krishnatejaswi S](https://www.github.com/KTS-o7)
+
+## Citation
+
+```bibtex
+@misc{cyclomatic-complexity-clang-plugin,
+  author = {Krishnatejaswi S},
+  title = {Cyclomatic Complexity Clang Plugin},
+  year = {2024},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://www.github.com/KTS-o7/cyclomatic-complexity-clang-plugin}}
+}
+```
+
+Chicago Style Citation
+
+```bibtex
+Krishnatejaswi S. "Cyclomatic Complexity Clang Plugin." GitHub, 2024. https://www.github.com/KTS-o7/cyclomatic-complexity-clang-plugin.
+```
+
+---
+
+## Star Gazers Over Time
+
+[![Star History Chart](https://api.star-history.com/svg?repos=KTS-o7/cyclomatic-complexity-clang-plugin&type=Date)](https://star-history.com/#KTS-o7/cyclomatic-complexity-clang-pluginr&Date)
+
+---

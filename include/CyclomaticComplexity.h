@@ -37,3 +37,16 @@ public:
 };
 
 #endif // CYCLOMATIC_COMPLEXITY_H
+
+/*
+This code was extensively written from pain and suffering by 
+- Krishnatejaswi S
+If you are planning to copy this code for your benefit , the least you can do is give me some credit and a github star.
+
+Feel free to fork this code , improve it and make a pull request to the original repo.
+ 
+ You can reach me at:
+-   shentharkrishnatejaswi@gmail.com
+-  https://www.linkedin.com/in/krishnatejaswi-shenthar/
+-  https://www.github.com/KTS-o7
+*/

@@ -130,3 +130,21 @@ protected:
 };
 
 static FrontendPluginRegistry::Add<CyclomaticComplexityAction> X("cyclomatic-complexity", "Calculate cyclomatic complexity of functions");
+
+/* 
+This main body of the code is responsible for the following:
+- Traversing the AST and calculating the cyclomatic complexity of each function
+- Reporting the cyclomatic complexity as a remark
+- Writing the cyclomatic complexity of each function to a file
+
+Cyclomatic complexity is a software metric used to indicate the complexity of a program. It is a quantitative measure of the number of linearly independent paths through a program's source code. It is calculated by counting the number of decision points in the source code. The higher the cyclomatic complexity, the more complex the program is.
+
+The CyclomaticComplexityVisitor class is a RecursiveASTVisitor that traverses the AST and calculates the cyclomatic complexity of each function. 
+The VisitFunctionDecl method is called for each function declaration in the AST. 
+The calculateCyclomaticComplexity method calculates the cyclomatic complexity of a function by counting the number of branching statements in the function's body.
+The countBranchingStatements method recursively counts the branching statements in a statement.
+
+This code was extensively written with pain and suffering by
+- Krishnatejaswi S
+If you are planning to copy this code for your benefit, the least you can do is give me some credit and a github star.
+*/
